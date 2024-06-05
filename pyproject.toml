@@ -3,24 +3,22 @@ requires = ["setuptools==68.0.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name        = "architecture_diagrams"
-version     = "0.0.1"
-license     = {text = "MIT"}
+name = "architecture_diagrams"
+version = "0.0.1"
+license = { text = "MIT" }
 description = "A examplebot project"
-readme      = "README.md"
-authors     = [
-    {name = "Lamoreaux Lab", email = "info@golamoreaux.com"}
-]
+readme = "README.md"
+authors = [{ name = "Lamoreaux Lab", email = "info@golamoreaux.com" }]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 requires-python = ">=3.12.0"
-dependencies    = []
+dependencies = []
 
 [project.urls]
-"Homepage"    = "https://github.com/briglx/architecture_diagrams"
+"Homepage" = "https://github.com/briglx/architecture_diagrams"
 "Source Code" = "https://github.com/briglx/architecture_diagrams.git"
 "Bug Reports" = "https://github.com/briglx/architecture_diagrams/issues"
 
@@ -29,16 +27,35 @@ boil = "architecture_diagrams.main:main"
 
 [tool.setuptools]
 platforms = ["any"]
-zip-safe  = false
+zip-safe = false
 include-package-data = true
 
 [tool.setuptools.packages.find]
 include = ["architecture_diagrams*"]
 
+[tool.codespell]
+skip = './.*,*.csv,*.json,*.pyc,./docs/_build/*,./htmlcov/*,*.workbook,*.egg-info'
+quiet-level = 2
+ignore-words-list = "aks"
+
 [tool.bandit]
 exclude = [".venv/*.*"]
 exclude_dirs = [".venv"]
-tests = ["B108", "B306", "B307", "B313", "B314", "B315", "B316", "B317", "B318", "B319", "B320", "B602", "B604"]
+tests = [
+    "B108",
+    "B306",
+    "B307",
+    "B313",
+    "B314",
+    "B315",
+    "B316",
+    "B317",
+    "B318",
+    "B319",
+    "B320",
+    "B602",
+    "B604",
+]
 [tool.bandit.assert_used]
 skips = ['*_test.py', '*/test_*.py']
 
@@ -55,19 +72,14 @@ combine_as_imports = true
 
 # Used with flake8
 [tool.pydocstyle]
-match-dir='[^node_module].*'
+match-dir = '[^node_module].*'
 
 [tool.pylint.MAIN]
 py-version = "3.12"
 jobs = 2
-load-plugins = [
-    "pylint.extensions.code_style",
-    "pylint.extensions.typing"
-]
+load-plugins = ["pylint.extensions.code_style", "pylint.extensions.typing"]
 persistent = false
-fail-on = [
-    "I",
-]
+fail-on = ["I"]
 
 [tool.pylint.FORMAT]
 expected-line-ending-format = "LF"

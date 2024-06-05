@@ -1,6 +1,6 @@
 # Open AI Chatbot Architecture
 
-This reference architecture shows a chatbot architecture that uses generative AI workloadsto provide a conversational interface to users. 
+This reference architecture shows a chatbot architecture that uses generative AI workloadsto provide a conversational interface to users.
 
 ## Architecture
 ![AI ML Chatbot Architecture](ai_ml_chatbot_architecture.png)
@@ -23,7 +23,7 @@ This reference architecture shows a chatbot architecture that uses generative AI
 
 ## Authentication
 
-* End users authenticate to the flask app with Microsoft Entra ID OAuth and an registered [Application Registration](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) in Azure Active Directory. 
+* End users authenticate to the flask app with Microsoft Entra ID OAuth and an registered [Application Registration](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) in Azure Active Directory.
 * The flask app uses a [Managed Identity](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview) to authenticate with Azure OpenAI.
 * The flask app connects to Databricks with [OAuth machine-to-machine authentication](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/python-sql-connector#--oauth-machine-to-machine-m2m-authentication) using an Azure Databricks service principal.
 

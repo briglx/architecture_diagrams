@@ -1,7 +1,5 @@
 {
-    "build": {
-      "image": "lamoreauxlab.azurecr.io/devcontainer/python:latest"
-    },
+    "image": "lamoreauxlab.azurecr.io/devcontainer/python:latest",
     "features": {},
     "customizations": {
       "vscode": {
