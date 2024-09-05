@@ -4,7 +4,7 @@ This reference architecture shows a chatbot architecture that uses generative AI
 
 ## Architecture
 
-![AI ML Chatbot Architecture](ai_ml_chatbot_architecture.png)
+![AI ML Chatbot Architecture](ai_ml_chatbot_architecture.svg)
 
 ## Components
 
