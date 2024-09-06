@@ -8,11 +8,12 @@ repos:
     hooks:
       - id: codespell
         args:
-          - '--skip="./.*,*.csv,*.json,*.pyc,./docs/_build/*,./htmlcov/*"'
+          - '--skip="./.*,*.csv,*.json,*.pyc,./docs/_build/*,./htmlcov/*,*.svg"'
           - "--quiet-level=2"
         exclude_types:
           - csv
           - json
+          - svg
   - repo: "https://github.com/psf/black"
     rev: 24.3.0
     hooks:
