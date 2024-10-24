@@ -112,3 +112,5 @@ rstcheck README.rst
 # References
 
 - Package Python Projects https://packaging.python.org/en/latest/tutorials/packaging-projects/
+- PowerBI Icons https://github.com/microsoft/PowerBI-Icons
+- Power Platform Icons https://learn.microsoft.com/en-us/power-platform/guidance/icons
