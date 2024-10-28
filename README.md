@@ -54,9 +54,6 @@ pip install -r requirements_dev.txt
 sudo apt-get update
 sudo apt-get install -y shellcheck
 pre-commit install
-
-# Install the package locally
-pip install --editable .
 ```
 
 ## Style Guidelines
